@@ -1,6 +1,7 @@
 body {
     margin: 60px auto;
     width: 70%;
+    text-align: center;
 }
 nav ul, footer ul {
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
@@ -12,6 +13,7 @@ nav ul, footer ul {
 nav ul li, footer ul li {
     display: inline;
     margin-right: 20px;
+    text-align: center;
 }
 a {
     text-decoration: none;
@@ -20,6 +22,7 @@ a {
 }
 a:hover {
     text-decoration: underline;
+    text-align: center;
 }
 h1 {
     font-size: 3em;
@@ -35,11 +38,13 @@ p {
 footer {
     border-top: 1px solid #d5d5d5;
     font-size: .8em;
+    text-align: center;
 }
 
 ul.posts { 
     margin: 20px auto 40px; 
     font-size: 1.5em;
+    text-align: center;
 }
 
 ul.posts li {
