@@ -25,7 +25,7 @@ a:hover {
     text-align: center;
 }
 h1 {
-    font-size: 3em;
+    font-size: 1em;
     text-align: center;
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
 }
@@ -40,14 +40,14 @@ p {
 footer {
     border-top: 1px solid #d5d5d5;
     font-size: .8em;
-    text-align: center;
+    text-align: left;
 }
 
 ul.posts { 
     margin-left: 0px; 
     margin-right: 0px;
     font-size: 1.5em;
-    text-align: center;
+    text-align: right;
 }
 
 ul.posts li {
