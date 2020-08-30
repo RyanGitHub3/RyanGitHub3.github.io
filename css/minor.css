@@ -24,7 +24,7 @@ a:hover {
     text-decoration: underline;
     text-align: center;
 }
-div {
+.image {
   border: 1px solid black;
   margin-top: 100px;
   margin-bottom: 100px;
