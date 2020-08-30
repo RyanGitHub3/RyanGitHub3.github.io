@@ -25,12 +25,10 @@ a:hover {
     text-align: center;
 }
 .image{
-    border: 1px solid black;
     margin-top: 100px;
     margin-bottom: 100px;
-    margin-right: 150px;
+    margin-right: 0px;
     margin-left: 80px;
-    background-color: lightblue;
 }
 h1 {
     font-size: 3em;
