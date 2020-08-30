@@ -24,12 +24,6 @@ a:hover {
     text-decoration: underline;
     text-align: center;
 }
-.image {
-  border: 1px solid black;
-  margin-right: 0px;
-  margin-left: 0px;
-  background-color: lightblue;
-}
 h1 {
     font-size: 3em;
     text-align: center;
