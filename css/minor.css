@@ -1,6 +1,6 @@
 body {
-    margin-left: 0px;
-    margin-right: 0px;
+    margin-left: 20px;
+    margin-right: 20px;
     width: 70%;
 }
 nav ul, footer ul {
@@ -36,8 +36,8 @@ a:hover {
   margin-right: 20px;
 }
 .blurb {
-  margin-left: 0px;
-  margin-right: 0px; 
+  margin-left: 40px;
+  margin-right: 40px; 
 }
 h1 {
     font-size: 3em;
@@ -49,8 +49,8 @@ p {
     line-height: 1.4em;
     color: #333;
     text-align: center;
-    margin-right: 0px;
-    margin-left: 0px;
+    margin-right: 30px;
+    margin-left: 30px;
 }
 footer {
     border-top: 1px solid #d5d5d5;
@@ -59,8 +59,8 @@ footer {
 }
 
 ul.posts { 
-    margin-left: 0px; 
-    margin-right: 0px;
+    margin-left: 40px; 
+    margin-right: 40px;
     font-size: 1.5em;
     text-align: right;
 }
