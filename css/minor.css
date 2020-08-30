@@ -1,5 +1,6 @@
 body {
-    margin: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
     width: 70%;
 }
 nav ul, footer ul {
@@ -29,6 +30,14 @@ a:hover {
   margin-right: 0px;
   margin-left: 0px;
   background-color: lightblue;
+}
+.container {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.blurb {
+  margin-left: 0px;
+  margin-right: 0px; 
 }
 h1 {
     font-size: 3em;
