@@ -26,14 +26,12 @@ a:hover {
 }
 .image {
   border: 1px solid black;
-  margin-top: 100px;
-  margin-bottom: 100px;
   margin-right: 0px;
   margin-left: 0px;
   background-color: lightblue;
 }
 h1 {
-    font-size: 1em;
+    font-size: 3em;
     text-align: center;
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
 }
