@@ -17,12 +17,12 @@ nav ul li, footer ul li {
 }
 a {
     text-decoration: none;
-    text-align: center;
+    text-align: left;
     color: #999;
 }
 a:hover {
     text-decoration: underline;
-    text-align: center;
+    text-align: left;
 }
 h1 {
     font-size: 3em;
@@ -38,13 +38,13 @@ p {
 footer {
     border-top: 1px solid #d5d5d5;
     font-size: .8em;
-    text-align: center;
+    text-align: left;
 }
 ul.posts { 
     margin-left: 0px; 
     margin-right: 0px;
     font-size: 1.5em;
-    text-align: center;
+    text-align: left;
 }
 ul.posts li {
     list-style: none;
