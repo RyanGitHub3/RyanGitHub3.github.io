@@ -17,34 +17,34 @@ nav ul li, footer ul li {
 }
 a {
     text-decoration: none;
-    text-align: left;
+    text-align: center;
     color: #999;
 }
 a:hover {
     text-decoration: underline;
-    text-align: left;
+    text-align: center;
 }
 h1 {
     font-size: 3em;
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
-    text-align: left;
+    text-align: center;
 }
 p {
     font-size: 1.5em;
     line-height: 1.4em;
     color: #333;
-    text-align: left;
+    text-align: center;
 }
 footer {
     border-top: 1px solid #d5d5d5;
     font-size: .8em;
-    text-align: left;
+    text-align: center;
 }
 ul.posts { 
     margin-left: 0px; 
     margin-right: 0px;
     font-size: 1.5em;
-    text-align: left;
+    text-align: center;
 }
 ul.posts li {
     list-style: none;
