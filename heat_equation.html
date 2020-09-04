@@ -17,21 +17,49 @@
 		<div class="container">
     		<div class="heat_equation">
         		<h1>Projects</h1>
-				<p>Math, Stats, and Computer Science Projects Below</a></p>
 			<h2 style="text-align:center;">Comparing Numerical Solutions To The Heat Equation</h2>
-				<p> Text about Forward Euler</p>
+			<h3 style="text-align:left;">Main Idea</h3>
+				<p style="text-align:left;"> The aim of this project is to test three different numerical methods that can be
+					used in order to solve the heat equation, and observe the efficiency and stability of each. These methods are
+					the forward euler, backward euler, and crank-nicholson methods.</p>
+			<h3 style="text-align:left;">Problem Statement</h3>
+				<p style="text-align:left;"> The time step size for this problem will be k=0.01, and the mesh step size will be
+					h=0.02. We will observe the equation after 1 second in time has passed. We begin with the initial boundary 
+					value problem of the heat equation written as ut(t, x) − uxx(t, x) = 0. Our problem specific case will be 
+					represented as u(0, x) = e^−100x^2, where u(−1, t) = u(1, t) = 0.</p>
+			<h3 style="text-align:left;">Forward Euler</h3>
+				<p style="text-align:left;"> Plotted below in the first graph are 100 realizations of the heat equation as it passes 
+					through time going from 0 seconds to 1 seconds with step size k=0.01. The second plot shows the equation when 
+					the time is exactly 1 second. We can see that this method is extremely unstable, as we are getting an answer 
+					just shy of 1e182, which is massive.</p>
 				<p><img src="ForwardEuler_First.jpg" style="width:786px;height:400px;/"  align="middle" ></p>	
-				<p> Text about Forward Euler</p>
 				<p><img src="ForwardEuler_Second.jpg" style="width:783px;height:400px;/"  align="middle" ></p>
-				<p> Text about Backward Euler</p>
+			<h3 style="text-align:left;">Backward Euler</h3>
+				<p style="text-align:left;"> Plotted below in the first graph are 100 realizations of the heat equation as it passes 
+					through time going from 0 seconds to 1 seconds with step size k=0.01. The second plot shows the equation when 
+					the time is exactly 1 second. We can see that this method is extremely stable, since we move from the our initial
+					starting point (the blue curve in the first graph) that has a high temparature, down to a temperature of almost zero
+					as time passes and our system cools off. This cooled off system, when time is equal to 1 second, can be seen in 
+					the second graph (also a blue curve).</p>
 				<p><img src="BackwardEuler_First.jpg" style="width:791px;height:400px;/"  align="middle" ></p>
-				<p> Text about Backward Euler</p>
 				<p><img src="BackwardEuler_Second.jpg" style="width:800px;height:400px;/"  align="middle" ></p>
-				<p> Text about Crank Nicholson</p>
+			<h3 style="text-align:left;">Crank-Nicolson Method</h3>
+				<p style="text-align:left;"> Plotted below in the first graph are 100 realizations of the heat equation as it passes 
+					through time going from 0 seconds to 1 seconds with step size k=0.01. The second plot shows the equation when 
+					the time is exactly 1 second. Much like the Backward Euler method, the Crank-Nicholson method is also stable.
+					We can see how the curves "cool off" and decrease in temperature (as show by going from the blue to orange
+					to green to red curves and so on).</p>
 				<p><img src="Crank_First.jpg" style="width:788px;height:400px;/"  align="middle" ></p>
-				<p> Text about Crank Nicholson</p>
 				<p><img src="Crank_Second.jpg" style="width:746px;height:370px;/"  align="middle" ></p>
-				<p> Text about Crank Nicholson</p>
+			<h3 style="text-align:left;">Concluding Statements & Analysis of Findings</h3>
+				<p style="text-align:left;"> The most important thing to understand about the results of the graphs above is that	
+					the backwards Euler Method as well as Crank Nicolson Method are unconditionally stable, which is why we are 
+					able to observe them converging to approximate some solution when k=0.01. The forwards Euler Method on the other 
+					hand, is only stable when (k/h^2) < 0.5. This only occurs around k = 0.0001, which would yield 0.25 < 0.5. Since
+					k=0.01, our stability equation produces (0.01/0.02^2)=25 which is not less than 0.5.
+			<h3 style="text-align:left;">*I applied this same idea to various step sizes of "k" to each of these three methods, and got some 	
+					really fascinating looking graphs and results. The full project with all the code can be viewed on my GitHub, 
+					link below.*</h3>
     		</div><!-- /.heat_equation -->
 		</div><!-- /.container -->
 		<footer>
