@@ -3,7 +3,7 @@ body, html {
   margin: 0;
 }
 .bg {
-  background-image: url(..Home_Page_Image.jpg);
+  background-image: url(../Home_Page_Image.jpg);
   height: 50%; 
   background-position: center;
   background-repeat: no-repeat;
