@@ -46,20 +46,52 @@
         
         		<h3>The Layout</h3>
         
-       				<p style="text-align:left;">Below is a graph that shows the amount of gold per hole dug at each specific area along the one mile ravine. 
-       				Unfortunately for you, you are not privy to this information.</p>
+       				<p style="text-align:left;">Below is a graph that shows the true amount of gold per hole at each specific area 
+				along the one mile ravine. If you were to dig one hole after another consecutively from the start of the ravine to
+				the end, plotting how far into the ravine that you are with the amount of gold you found in your hole, this is the 
+				graph that you would come up with. Unfortunately for you, digging that many holes would be impossible for one person
+				and you do not have the resources, time, or money to accomplish such a feat, therefore you are not privy to this true function
+				that relates distance in the ravine to gold density.</p>
+			
+				<p><img src="../images/Gold_True_Function_1.jpg" style="width:717;height:350px;/"  align="middle" ></p>
+			
+				<p style="text-align:left;">In order to solve this problem, you decide to dig 4 holes randomly spaced throughout the 
+				ravine, see how much gold is in each, and then go from there. This takes a month to accomplish, but will certainly be 
+				worth the work. Below are the results of the data that you collected from the 4 holes that you dug. Remember, cannot see
+				the red true function, it is only there as a reference for the omniscient reader.</p>
         
-				<p><img src="../images/Gold_True_Function.jpg" style="width:600;height:300px;/"  align="middle" ></p>
+				<p><img src="../images/Gold_True_Function.jpg" style="width:700;height:350px;/"  align="middle" ></p>
 			
-				<p><img src="../images/Gold_True_Function_1.jpg" style="width:604;height:295px;/"  align="middle" ></p>
-			
-				<p><img src="../images/GP_First_Dig.jpg" style="width:588;height:300px;/"  align="middle" ></p>
-			
-				<p><img src="../images/GP_Second_Dig.jpg" style="width:600;height:300px;/"  align="middle" ></p>
-			
-				<p><img src="../images/GP_Third_Dig.jpg" style="width:605;height:300px;/"  align="middle" ></p>
+				<p style="text-align:left;">At this point you are able to seperate yourself from the other miners that came before you. While
+				the average miner might decide to stake his claim and start digging roughly 0.13 miles into the ravine, the place where the most 
+				gold was found out of the 4 holes that were dug, you decide to take a different approach. You use your data to construct a 
+				Gaussian Process in order to better understand what parts of the ravine are worth exploring farther, before you set up shop and 
+				commit to digging in one specific area. This produces the graph shown below.</p>
 				
-				<h3>*Full Code, Datasets and Project Description can be found on GitHub by following the link below*</h3>
+				<p><img src="../images/GP_First_Dig.jpg" style="width:686;height:350px;/"  align="middle" ></p>
+			
+				<p style="text-align:left;">Based on the results of your model, you determine that there is still quite a bit of area left
+				to search in the ravine where there is a chance that there might be more gold per hole dug. This is shown by the shaded 
+				region on the graph. Since your model says that at 0.62 miles into the ravine you have the highest chance of finding an area
+				to mine with a greater gold density per hole than your current best spot, you decide to dig another hole there.</p>
+			
+				<p><img src="../images/GP_Second_Dig.jpg" style="width:700;height:350px;/"  align="middle" ></p>
+			
+				<p style="text-align:left;">Sucess! Your new location yielded far more gold per hole dug than your previous maximum, so 
+				the search was worth it. You run the Gaussian Process again, this time with a new data point and a new maximum. As you
+				can see from the graph above, the shaded region of possible locations that are better than where you currently are has 
+				gotten significantly smaller. You look at the graph, and decide the next best place to look is at 0.57 miles into the ravine
+				since there is a chance that this area will contain a higher gold density than your current location.</p>
+			
+				<p><img src="../images/GP_Third_Dig.jpg" style="width:706;height:350px;/"  align="middle" ></p>
+			
+				<p style="text-align:left;">Sucess!...Again! This time there is no where left to search, since the shaded region is the
+				only place left that is greater than your current maximum, and the Gaussian Process does not believe the there is any chance
+				that the true function exists in this region. You set up your camp and your mine here, and start digging. After only
+				a month of prep work (4 random holes dug) and two weeks of searching (2 holes dug), you have found the best possible 
+				place to dig with the least amount of work, and proceed to strike it rich.</p>
+				
+				<h3>*Code for this project is not yet viewable on GitHub, but will be soon, thanks!*</h3>
     		</div><!-- /.gaussian_gold -->
 		</div><!-- /.container -->
 		<footer>
